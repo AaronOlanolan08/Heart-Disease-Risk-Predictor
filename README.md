@@ -12,6 +12,7 @@ This app is a simple heart disease risk predictor. It uses a LightGBM machine le
 
 
 
+
 2. Install Required Libraries
 
     Run the following command in your terminal:
@@ -42,10 +43,22 @@ This app is a simple heart disease risk predictor. It uses a LightGBM machine le
 ## Screenshots
 
 
-### HAM: 
+### UI: 
 
-![alt text](images/ham-ss.png "HAM")
+![alt text](images/UI.png "UI")
 
-### SPAM:
+### NOT AT RISK:
 
-![alt text](images/spam-ss.png "SPAM")
+![alt text](images/notatrisk.png "Not at risk")
+
+### AT RISK (LOW RISK):
+
+![alt text](images/lowrisk.png "Low risk")
+
+### AT RISK (MODERATE RISK):
+
+![alt text](images/modrisk.png "Moderate risk")
+
+### AT RISK (HIGH RISK):
+
+![alt text](images/highrisk.png "High risk")
