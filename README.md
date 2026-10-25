@@ -22,6 +22,10 @@ This app is a simple heart disease risk predictor. It uses a LightGBM machine le
 3. Train the Model
 
     This step creates the model.joblib and preprocessing.joblib files in the models/ directory.
+    Training uses stratified cross-validation to tune LightGBM hyperparameters using PR-AUC,
+    random undersampling of the majority class, and gain-based feature selection that retains
+    input features covering 95% of total importance.Preprocessing and undersampling are
+    fit on training data only.
 
         python train.py
 

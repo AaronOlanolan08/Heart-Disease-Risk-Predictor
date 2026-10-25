@@ -70,8 +70,8 @@ input_df = user_input()
 # Process the data in the pipeline and model 
 if st.button('Predict'):
     processed = pipeline.transform(input_df)
-    prediction = model.predict(processed)[0]
     proba = model.predict_proba(processed)[0][1]
+    prediction = int(proba >= 0.5)
 
     # Print results
     result = "AT RISK of Heart Disease" if prediction == 1 else "NOT AT RISK"
